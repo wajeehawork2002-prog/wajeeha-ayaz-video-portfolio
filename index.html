@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wajeeha Ayaz — Video Editor Portfolio</title>
+  <meta name="description" content="Cinematic video editing portfolio for Wajeeha Ayaz. Crafting stories across YouTube videos, documentary films, and high-impact reels with intentional pacing and sound design.">
+  <meta property="og:title" content="Wajeeha Ayaz — Video Editor Portfolio">
+  <meta property="og:description" content="Stories, Cut With Purpose. YouTube, documentary films, and reels crafted with editorial pacing and immersive sound.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23111111'/><text y='.9em' font-size='70' x='18' fill='%23c7a77a' font-family='serif'>W</text></svg>">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Vanilla Script (Deferred) -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Top Bar / Header (Strict 3-Zone Contract) -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <!-- Zone 1: Wordmark -->
+      <a href="#hero" class="brand" aria-label="Wajeeha Ayaz - Home">
+        <span>Wajeeha Ayaz</span>
+        <span class="brand-dot" aria-hidden="true"></span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#showreel" class="nav-link">Showreel</a>
+        <a href="#selected-work" class="nav-link">Selected Work</a>
+        <a href="#what-i-edit" class="nav-link">What I Edit</a>
+        <a href="#approach" class="nav-link">Approach</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Zone 3: Primary Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-header js-start-project" aria-label="Start a Project with Wajeeha Ayaz">
+          Start a Project
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileNav">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-links">
+      <li><a href="#showreel" class="mobile-nav-link">Showreel</a></li>
+      <li><a href="#selected-work" class="mobile-nav-link">Selected Work</a></li>
+      <li><a href="#what-i-edit" class="mobile-nav-link">What I Edit</a></li>
+      <li><a href="#approach" class="mobile-nav-link">Approach</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <p>Direct Inquiries:</p>
+      <a href="mailto:asnaarmeenayaz@gmail.com">asnaarmeenayaz@gmail.com</a>
+    </div>
+  </aside>
+
+  <main>
+<!-- HERO SECTION -->
+<section class="section hero" id="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- LEFT SIDE -->
+      <div class="hero-copy reveal">
+
+        <span class="eyebrow">Video Editor</span>
+
+        <h1 class="hero-title" id="hero-title">
+          Stories, Cut With <em>Purpose.</em>
+        </h1>
+
+        <p class="hero-text">
+          I edit YouTube videos, documentaries, reels, and short-form content with clean cuts, smooth pacing, clear audio, and engaging visuals.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#selected-work" class="btn btn-primary">
+            View My Work
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <a href="#contact" class="btn btn-secondary js-start-project">
+            Let's Work Together
+          </a>
+        </div>
+
+        <!-- CATEGORIES STAY UNDER LEFT TEXT -->
+        <div class="hero-metrics">
+
+          <div class="hero-metric-item">
+            <span class="hero-metric-val">YouTube</span>
+            <span class="hero-metric-lbl">Long-Form Video Editing</span>
+          </div>
+
+          <div class="hero-metric-divider" aria-hidden="true"></div>
+
+          <div class="hero-metric-item">
+            <span class="hero-metric-val">Documentary</span>
+            <span class="hero-metric-lbl">Story-Driven Editing</span>
+          </div>
+
+          <div class="hero-metric-divider" aria-hidden="true"></div>
+
+          <div class="hero-metric-item">
+            <span class="hero-metric-val">Reels</span>
+            <span class="hero-metric-lbl">Short-Form Editing</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE VIDEO -->
+      <div class="hero-preview-container reveal">
+
+        <div class="hero-preview-frame">
+
+          <video
+            class="hero-preview-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="images/showreel-poster.jpg">
+            <source src="videos/showreel.mp4" type="video/mp4">
+          </video>
+
+          <div class="hero-preview-center">
+            <button
+              type="button"
+              class="play-button-large"
+              id="heroReelTrigger"
+              aria-label="Play Featured Showreel">
+
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+
+            </button>
+          </div>
+
+          <div class="hero-preview-footer">
+            <span class="mono">TIMELINE MONITOR</span>
+            <span class="mono">PRORES 422 HQ</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="ticker-band" aria-hidden="true">
+  <div class="ticker-track">
+
+    <div class="ticker-item">
+      YouTube Editing <span class="sep">/</span>
+      Documentary Editing <span class="sep">/</span>
+      Reels <span class="sep">/</span>
+      Storytelling <span class="sep">/</span>
+      Clean Cuts <span class="sep">/</span>
+      Sound Design
+    </div>
+
+    <div class="ticker-item">
+      YouTube Editing <span class="sep">/</span>
+      Documentary Editing <span class="sep">/</span>
+      Reels <span class="sep">/</span>
+      Storytelling <span class="sep">/</span>
+      Clean Cuts <span class="sep">/</span>
+      Sound Design
+    </div>
+
+  </div>
+</div>
+
+
+
+    <!-- SHOWREEL SECTION -->
+    <section class="section showreel-section" id="showreel" aria-labelledby="showreel-heading">
+      <div class="container">
+        <div class="showreel-header reveal">
+        <span class="eyebrow">Featured Video</span>
+
+<h2 class="section-heading" id="showreel-heading">My Showreel</h2>
+
+<p class="section-desc">
+  A short selection of my video editing work, including YouTube videos, documentaries, and short-form content.
+</p>  
+        </div>
+
+        <div class="showreel-container reveal" id="showreelContainer">
+          <div class="showreel-video-wrapper">
+            <video class="showreel-video" id="showreelVideo" poster="images/showreel-poster.jpg" playsinline preload="metadata">
+              <source src="videos\showreel.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- Initial Play Overlay -->
+            <div class="showreel-play-overlay" id="showreelPlayOverlay" role="button" aria-label="Play Showreel" tabindex="0">
+              <div class="play-circle-center">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+              <span class="play-prompt-text">Watch Showreel</span>
+            </div>
+
+            <!-- Custom Video Controls Bar -->
+            <div class="video-custom-controls" aria-label="Video Controls">
+              <!-- Scrub Bar -->
+              <div class="video-progress-bar" id="showreelProgress" role="slider" aria-label="Video Progress Scrubber" tabindex="0">
+                <div class="video-progress-fill" id="showreelProgressFill">
+                  <span class="video-progress-handle" aria-hidden="true"></span>
+                </div>
+              </div>
+
+              <!-- Controls Row -->
+              <div class="video-controls-row">
+                <div class="video-controls-left">
+                  <button type="button" class="control-btn" id="showreelPlayBtn" aria-label="Play Showreel">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M8 5v14l11-7z" fill="currentColor"/>
+                    </svg>
+                  </button>
+
+                  <div class="timecode-readout mono">
+                    <span class="current" id="showreelTimeCurrent">00:00</span>
+                    <span class="sep">/</span>
+                    <span class="duration" id="showreelTimeDuration">00:08</span>
+                  </div>
+                </div>
+
+                <div class="video-controls-right">
+                  <button type="button" class="control-btn" id="showreelMuteBtn" aria-label="Mute Showreel">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" id="showreelMuteIcon">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                    </svg>
+                  </button>
+
+                  <button type="button" class="control-btn" id="showreelFullscreenBtn" aria-label="Toggle Fullscreen">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK SECTION -->
+<section class="section section-secondary" id="selected-work" aria-labelledby="work-heading">
+  <div class="container">
+    <div class="work-header-wrap reveal">
+      <span class="eyebrow">Portfolio</span>
+      <div class="work-header-top">
+        <div>
+          <span class="eyebrow">My Work</span>
+
+          <h2 class="section-heading" id="work-heading">Selected Work</h2>
+
+          <p class="section-desc" style="margin-bottom: 0;">
+            A selection of my video editing work across YouTube videos, documentaries, and reels.
+          </p>
+        </div>
+
+        <!-- Category Filter Controls (Segmented Tabs) -->
+        <div class="filter-tabs" role="tablist" aria-label="Filter Projects by Format">
+          <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button type="button" class="filter-tab" data-filter="youtube" role="tab" aria-selected="false">YouTube</button>
+          <button type="button" class="filter-tab" data-filter="documentary" role="tab" aria-selected="false">Documentary</button>
+          <button type="button" class="filter-tab" data-filter="reels" role="tab" aria-selected="false">Reels</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Grid (12 Projects) -->
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- Project 1: YouTube -->
+      <article class="project-card reveal" data-category="youtube" data-project="project-1" tabindex="0" role="button" aria-label="Open project How to Shell and Eat a Whole Lobster">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-1.jpg" alt="How to Shell and Eat a Whole Lobster YouTube video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>YouTube</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Long-Form</span>
+          </div>
+
+          <h3 class="project-title">How to Shell and Eat a Whole Lobster</h3>
+
+          <p class="project-desc">
+            A food-focused instructional video with clear step-by-step editing, supporting footage, and natural pacing.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 2: YouTube -->
+      <article class="project-card reveal" data-category="youtube" data-project="project-2" tabindex="0" role="button" aria-label="Open project Top 10 Most Popular American Foods">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-2.jpg" alt="Top 10 Most Popular American Foods YouTube video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>YouTube</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">List Video</span>
+          </div>
+
+          <h3 class="project-title">Top 10 Most Popular American Foods</h3>
+
+          <p class="project-desc">
+            A food list video edited with engaging visuals, clean transitions, music, text, and steady pacing.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 3: YouTube -->
+      <article class="project-card reveal" data-category="youtube" data-project="project-3" tabindex="0" role="button" aria-label="Open project 7 Worst and 7 Best American Pizza Chains">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-3.jpg" alt="7 Worst and 7 Best American Pizza Chains YouTube video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>YouTube</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Comparison</span>
+          </div>
+
+          <h3 class="project-title">7 Worst and 7 Best American Pizza Chains</h3>
+
+          <p class="project-desc">
+            A comparison-style food video with structured sections, supporting visuals, text, and smooth transitions.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 4: YouTube -->
+      <article class="project-card reveal" data-category="youtube" data-project="project-4" tabindex="0" role="button" aria-label="Open project 7 Worst and 7 Best US Grocery Stores">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-4.jpg" alt="7 Worst and 7 Best US Grocery Stores YouTube video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>YouTube</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Comparison</span>
+          </div>
+
+          <h3 class="project-title">7 Worst and 7 Best US Grocery Stores</h3>
+
+          <p class="project-desc">
+            A research-based comparison video with clear organization, supporting footage, text, and engaging pacing.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 5: Documentary -->
+      <article class="project-card reveal" data-category="documentary" data-project="project-5" tabindex="0" role="button" aria-label="Open project Every American Fast Food Explained">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-5.jpg" alt="Every American Fast Food Explained documentary video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Documentary</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Long-Form</span>
+          </div>
+
+          <h3 class="project-title">Every American Fast Food Explained</h3>
+
+          <p class="project-desc">
+            A research-based food documentary with clear storytelling, supporting visuals, narration, and smooth pacing.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 6: Documentary -->
+      <article class="project-card reveal" data-category="documentary" data-project="project-6" tabindex="0" role="button" aria-label="Open project Why These 12 Luxury Brands You Buy Will Collapse by 2027">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-6.jpg" alt="Why These 12 Luxury Brands You Buy Will Collapse by 2027 documentary video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Documentary</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Explainer</span>
+          </div>
+
+          <h3 class="project-title">Why These 12 Luxury Brands You Buy Will Collapse by 2027</h3>
+
+          <p class="project-desc">
+            A research-focused explainer edited with structured storytelling, supporting visuals, narration, and clear pacing.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 7: Documentary -->
+      <article class="project-card reveal" data-category="documentary" data-project="project-7" tabindex="0" role="button" aria-label="Open project Rotisserie Chicken Investigation">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-7.jpg" alt="Rotisserie Chicken investigation documentary video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Documentary</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Investigation</span>
+          </div>
+
+          <h3 class="project-title">Rotisserie Chicken Investigation</h3>
+
+          <p class="project-desc">
+            An investigation-style food video comparing products from different stores with clear structure and supporting footage.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 8: Reels -->
+      <article class="project-card reveal" data-category="reels" data-project="project-8" tabindex="0" role="button" aria-label="Open project Top 5 Wild Geography Facts">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-8.jpg" alt="Top 5 Wild Geography Facts short-form video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Reels</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Short-Form</span>
+          </div>
+
+          <h3 class="project-title">Top 5 Wild Geography Facts</h3>
+
+          <p class="project-desc">
+            A fast-paced geography reel using quick cuts, text, visuals, and engaging pacing.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 9: Reels -->
+      <article class="project-card reveal" data-category="reels" data-project="project-9" tabindex="0" role="button" aria-label="Open project How to Edit Viral Reels in After Effects">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-9.jpg" alt="How to Edit Viral Reels in After Effects short-form video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Reels</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Tutorial</span>
+          </div>
+
+          <h3 class="project-title">How to Edit Viral Reels in After Effects</h3>
+
+          <p class="project-desc">
+            A short editing tutorial focused on clear steps, visual examples, text, and easy-to-follow pacing.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 10: Reels -->
+      <article class="project-card reveal" data-category="reels" data-project="project-10" tabindex="0" role="button" aria-label="Open project Why Nobody Can Cross the Darien Gap">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-10.jpg" alt="Why Nobody Can Cross the Darien Gap short-form video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Reels</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Short-Form</span>
+          </div>
+
+          <h3 class="project-title">Why Nobody Can Cross the Darién Gap?</h3>
+
+          <p class="project-desc">
+            A short-form geography video built around strong visuals, text, quick cuts, and engaging storytelling.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 11: Reels -->
+      <article class="project-card reveal" data-category="reels" data-project="project-11" tabindex="0" role="button" aria-label="Open project 2 Mind-Blowing USA Facts">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-11.jpg" alt="2 Mind-Blowing USA Facts short-form video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Reels</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Short-Form</span>
+          </div>
+
+          <h3 class="project-title">2 Mind-Blowing USA Facts</h3>
+
+          <p class="project-desc">
+            A short-form facts video using quick information, strong visuals, text, and engaging pacing.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Project 12: Reels -->
+      <article class="project-card reveal" data-category="reels" data-project="project-12" tabindex="0" role="button" aria-label="Open project The Cheeseburger An American Icon">
+        <div class="project-thumb-box">
+          <img src="images/projects/project-12.jpg" alt="The Cheeseburger An American Icon short-form video" class="project-thumb" loading="lazy" referrerpolicy="no-referrer">
+          <div class="project-thumb-overlay">
+            <span class="thumb-play-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Reels</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="format">Short-Form</span>
+          </div>
+
+          <h3 class="project-title">The Cheeseburger — An American Icon</h3>
+
+          <p class="project-desc">
+            A short food reel using engaging visuals, text, music, and quick pacing to highlight an iconic American food.
+          </p>
+
+          <div class="project-footer">
+            <span class="btn-watch">
+              Watch Project
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+    <!-- WHAT I EDIT SECTION -->
+    <section class="section" id="what-i-edit" aria-labelledby="what-heading">
+      <div class="container">
+        <div class="reveal" style="text-align: center; max-width: 680px; margin: 0 auto 3.5rem;">
+          <span class="eyebrow">Disciplines</span>
+          <h2 class="section-heading" id="what-heading">What I Edit</h2>
+<p class="section-desc"> 
+  Video editing tailored to the style, story, and pacing of each project.
+</p>
+        </div>
+
+        <div class="what-grid">
+          <!-- Column 1: YouTube -->
+          <div class="what-card reveal">
+            <span class="what-index">01</span>
+            <h3 class="what-title">YouTube Videos</h3>
+
+<p class="what-lead"> 
+  Engaging YouTube videos with clean editing, good pacing, captions, supporting visuals, and balanced audio to keep the content clear and engaging. 
+</p>
+<ul class="what-list">
+  <li class="what-list-item">Clean cuts and smooth pacing</li>
+  <li class="what-list-item">Captions and text</li>
+  <li class="what-list-item">B-roll and supporting visuals</li>
+  <li class="what-list-item">Background music and audio</li>
+  <li class="what-list-item">Basic color correction</li>
+</ul>
+          </div>
+
+        
+<!-- Column 2: Documentary -->
+<div class="what-card reveal">
+  <span class="what-index">02</span>
+  <h3 class="what-title">Documentary</h3>
+  <p class="what-lead">
+    Thoughtful documentary editing focused on clear storytelling, natural pacing, and meaningful moments.
+  </p>
+
+  <ul class="what-list">
+    <li class="what-list-item">Story-focused clip selection</li>
+    <li class="what-list-item">Natural pacing and smooth transitions</li>
+    <li class="what-list-item">B-roll and supporting footage</li>
+    <li class="what-list-item">Music and audio balancing</li>
+    <li class="what-list-item">Basic color correction</li>
+  </ul>
+</div>
+
+
+        
+<!-- Column 3: Reels -->
+<div class="what-card reveal">
+  <span class="what-index">03</span>
+  <h3 class="what-title">Reels</h3>
+
+  <p class="what-lead">
+    Short-form vertical videos designed for Instagram, TikTok, and YouTube Shorts with engaging pacing and clean visuals.
+  </p>
+
+  <ul class="what-list">
+    <li class="what-list-item">Strong opening hooks</li>
+    <li class="what-list-item">Fast cuts and smooth transitions</li>
+    <li class="what-list-item">Captions and text animations</li>
+    <li class="what-list-item">Music and sound effects</li>
+    <li class="what-list-item">Vertical 9:16 formatting</li>
+  </ul>
+</div>
+
+    </section>
+
+  
+<!-- EDITING APPROACH SECTION -->
+<section class="section section-secondary" id="approach" aria-labelledby="approach-heading">
+  <div class="container">
+    <div class="reveal" style="max-width: 680px; margin-bottom: 3.5rem;">
+      <span class="eyebrow">Methodology</span>
+      <h2 class="section-heading" id="approach-heading">Editing Approach</h2>
+      <p class="section-desc" style="margin-bottom: 0;">
+        A simple and thoughtful editing process focused on clear storytelling, strong pacing, and polished final videos.
+      </p>
+    </div>
+
+    <div class="approach-grid">
+      <!-- Pillar 1 -->
+      <div class="approach-card reveal">
+        <div class="approach-number">01 / FOUNDATION</div>
+        <h3 class="approach-card-title">Story & Structure</h3>
+        <p class="approach-card-text">
+          I organize the footage around the main story, selecting the moments that help the video feel clear and engaging.
+        </p>
+      </div>
+
+      <!-- Pillar 2 -->
+      <div class="approach-card reveal">
+        <div class="approach-number">02 / CADENCE</div>
+        <h3 class="approach-card-title">Pacing & Rhythm</h3>
+        <p class="approach-card-text">
+          I focus on smooth pacing and well-timed cuts so the video feels natural and keeps viewers interested.
+        </p>
+      </div>
+
+      <!-- Pillar 3 -->
+      <div class="approach-card reveal">
+        <div class="approach-number">03 / AUDIO</div>
+        <h3 class="approach-card-title">Sound & Audio</h3>
+        <p class="approach-card-text">
+          I balance dialogue, background music, and sound effects to create a clean and enjoyable listening experience.
+        </p>
+      </div>
+
+      <!-- Pillar 4 -->
+      <div class="approach-card reveal">
+        <div class="approach-number">04 / COLOR</div>
+        <h3 class="approach-card-title">Color Correction</h3>
+        <p class="approach-card-text">
+          I use clean and balanced color correction to keep footage consistent and give the final video a polished look.
+        </p>
+      </div>
+
+      <!-- Pillar 5 -->
+      <div class="approach-card reveal">
+        <div class="approach-number">05 / FLOW</div>
+        <h3 class="approach-card-title">Clean Transitions</h3>
+        <p class="approach-card-text">
+          I use simple, well-timed transitions that support the content without distracting from the story.
+        </p>
+      </div>
+
+      <!-- Pillar 6 -->
+      <div class="approach-card reveal">
+        <div class="approach-number">06 / DETAIL</div>
+        <h3 class="approach-card-title">Visual Storytelling</h3>
+        <p class="approach-card-text">
+          I use b-roll, text, music, and visual details to add context and make each video more engaging.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION ("Behind The Edit") --> 
+<section class="section" id="about" aria-labelledby="about-heading"> 
+  <div class="container"> 
+    <div class="about-grid"> 
+      <!-- Visual Frame --> 
+      <div class="about-frame reveal"> 
+        <img src="images\projects\showreel-poster.jpg" alt="About image" style="display:block !important; width:100% !important; height:100% !important; object-fit:cover !important; opacity:1 !important; visibility:visible !important;">
+        <div class="about-meta-tag mono"> 
+          <span>EDITING · STORYTELLING · FINAL CUT</span> 
+        </div> 
+      </div> 
+ 
+      <!-- Editorial Introduction --> 
+      <div class="about-content reveal"> 
+        <span class="eyebrow">Philosophy</span> 
+        <h2 class="section-heading" id="about-heading">Behind The Edit</h2> 
+ 
+        <blockquote class="about-statement"> 
+          "Good editing is about knowing what to keep, what to remove, and how to make every moment feel natural." 
+        </blockquote> 
+ 
+        <p class="about-body-text"> 
+          I focus on creating clean, engaging videos with clear storytelling, smooth pacing, and well-balanced visuals and audio. Whether it’s a YouTube video, documentary, or short-form reel, I edit each project according to its style and purpose. 
+        </p> 
+ 
+        <p class="about-body-text"> 
+          My goal is to keep the editing simple and effective. I pay attention to timing, music, captions, transitions, and supporting visuals so the final video feels polished without being overdone. 
+        </p> 
+ 
+        <div class="about-pillars"> 
+          <div class="pillar-item"> 
+            <span class="pillar-title">Narrative First</span> 
+            <span class="pillar-desc">Story and structure guide the editing process.</span> 
+          </div> 
+          <div class="pillar-item"> 
+            <span class="pillar-title">Clean & Balanced</span> 
+            <span class="pillar-desc">Clear visuals, smooth pacing, and well-balanced audio.</span> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</section>
+
+
+  
+<!-- CONTACT CTA SECTION --> 
+<section class="section contact-section" id="contact" aria-labelledby="contact-heading"> 
+  <div class="container"> 
+    <div class="contact-wrap reveal"> 
+      <span class="eyebrow">Collaboration</span> 
+      <h2 class="contact-heading" id="contact-heading"> 
+        Have a video that needs a <em>great edit?</em> 
+      </h2> 
+      <p class="contact-sub"> 
+        Let's discuss your next YouTube video, documentary, or reel. Share your footage and ideas, and I'll help turn them into a clean and engaging final video. 
+      </p> 
+ 
+      <div class="contact-actions"> 
+        <button type="button" class="btn btn-primary js-start-project" aria-label="Start a Project"> 
+          Start a Project 
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> 
+            <line x1="5" y1="12" x2="19" y2="12"></line> 
+            <polyline points="12 5 19 12 12 19"></polyline> 
+          </svg> 
+        </button> 
+        <a href="mailto:asnaarmeenayaz@gmail.com" class="btn btn-secondary"> 
+          Direct Email 
+        </a> 
+      </div> 
+ 
+      <div class="contact-direct"> 
+        <span>Direct Inquiries:</span> 
+        <a href="mailto:wajeehawork2002@gmail.com">wajeehawork2002@gmail.com</a> 
+      </div> 
+      
+    </div> 
+  </div> 
+</section>
+  </main>
+
+
+<!-- FOOTER --> 
+<footer class="footer" role="contentinfo"> 
+  <div class="container"> 
+    <div class="footer-top"> 
+
+      <!-- Col 1: Identity --> 
+      <div class="footer-brand-col"> 
+        <h3 class="footer-name">Wajeeha Ayaz</h3> 
+        <span class="footer-role">Video Editor</span> 
+        <p class="footer-bio"> 
+          Video editing focused on clear storytelling, smooth pacing, and clean visuals for YouTube videos, documentaries, and reels. 
+        </p> 
+      </div> 
+
+      <!-- Col 2: Focus Areas --> 
+      <div> 
+        <h4 class="footer-col-title">Focus Areas</h4> 
+        <ul class="footer-nav-list"> 
+          <li><a href="#selected-work">YouTube Videos</a></li> 
+          <li><a href="#selected-work">Documentary</a></li> 
+          <li><a href="#selected-work">Reels</a></li> 
+          <li><a href="#approach">Editing Approach</a></li> 
+        </ul> 
+      </div> 
+
+      <!-- Col 3: Navigation --> 
+      <div> 
+        <h4 class="footer-col-title">Navigation</h4> 
+        <ul class="footer-nav-list"> 
+          <li><a href="#hero">Overview</a></li> 
+          <li><a href="#showreel">Showreel</a></li> 
+          <li><a href="#selected-work">Selected Work</a></li> 
+          <li><a href="#about">Behind The Edit</a></li> 
+        </ul> 
+      </div> 
+
+      <!-- Col 4: Contact & Direct Inquiries --> 
+      <div> 
+        <h4 class="footer-col-title">Inquiries</h4> 
+        <div class="footer-contact-item"> 
+          <span>Email</span><br> 
+          <a href="mailto:wajeehawork2002@gmail.com">wajeehawork2002@gmail.com</a> 
+        </div> 
+        <div class="footer-contact-item">
+  <span>Phone</span><br>
+  <a href="tel:03250789871">03250789871</a>
+</div>
+        <div class="footer-contact-item"> 
+          <span>Availability</span><br> 
+          <span style="color: var(--color-cream);">Open for Video Projects</span> 
+        </div> 
+      </div> 
+
+    </div> 
+
+    <!-- Bottom Hairline & Legal / Credits --> 
+    <div class="footer-bottom"> 
+      <div class="footer-credits"> 
+        <span>&copy; 2026 Wajeeha Ayaz. All rights reserved.</span> 
+        <span aria-hidden="true">·</span> 
+        <span>Crafted with Purpose</span> 
+      </div> 
+
+      <a href="#hero" class="footer-back-to-top" aria-label="Back to top of page"> 
+        <span>Back to Top</span> 
+        <svg viewBox="0 0 24 24" aria-hidden="true"> 
+          <polyline points="18 15 12 9 6 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+        </svg> 
+      </a> 
+    </div> 
+  </div> 
+</footer>
+
+  <!-- PROJECT VIDEO MODAL (Cinematic Video Player) -->
+  <div class="modal-overlay" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <!-- Modal Close Button -->
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close Project Video Modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Video Player Frame -->
+      <div class="modal-video-box" id="modalVideoBox">
+        <video class="modal-video-player" id="modalVideoPlayer" playsinline preload="auto">
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Big Play Button Overlay -->
+        <div class="modal-play-overlay" id="modalPlayOverlay" role="button" aria-label="Play Project Video">
+          <div class="play-circle-center">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Video Player Controls Bar -->
+        <div class="modal-video-controls" aria-label="Modal Video Controls">
+          <!-- Scrubber -->
+          <div class="video-progress-bar" id="modalProgressBar" role="slider" aria-label="Video Progress Scrubber" tabindex="0">
+            <div class="video-progress-fill" id="modalProgressFill">
+              <span class="video-progress-handle" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="video-controls-row">
+            <div class="video-controls-left">
+              <button type="button" class="control-btn" id="modalPlayBtn" aria-label="Play Video">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z" fill="currentColor"/>
+                </svg>
+              </button>
+
+              <div class="timecode-readout mono">
+                <span class="current" id="modalTimeCurrent">00:00</span>
+                <span class="sep">/</span>
+                <span class="duration" id="modalTimeDuration">00:06</span>
+              </div>
+            </div>
+
+            <div class="video-controls-right">
+              <button type="button" class="control-btn" id="modalMuteBtn" aria-label="Mute Video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+              </button>
+
+              <button type="button" class="control-btn" id="modalFullscreenBtn" aria-label="Toggle Fullscreen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Narrative & Specs Panel -->
+      <div class="modal-info-panel">
+        <div class="modal-header-meta">
+          <span id="modalCategory">Category</span>
+          <span aria-hidden="true">·</span>
+          <span>Editorial Breakdown</span>
+        </div>
+        <h3 class="modal-title" id="modalTitle">Project Title</h3>
+        <p class="modal-summary" id="modalSummary">Project full narrative description.</p>
+<div class="modal-header-meta"> 
+  <span id="modalCategory">Category</span> 
+  <span aria-hidden="true">·</span> 
+  <span>Project Details</span> 
+</div> 
+
+<h3 class="modal-title" id="modalTitle">Project Title</h3> 
+
+<p class="modal-summary" id="modalSummary">
+  Project description.
+</p> 
+
+<div class="modal-specs-grid"> 
+  <div class="modal-spec-item"> 
+    <span class="modal-spec-label">Format</span> 
+    <span class="modal-spec-value mono" id="modalRatio">16:9</span> 
+  </div> 
+
+  <div class="modal-spec-item"> 
+    <span class="modal-spec-label">Duration</span> 
+    <span class="modal-spec-value mono" id="modalDuration">—</span> 
+  </div> 
+
+  <div class="modal-spec-item"> 
+    <span class="modal-spec-label">Audio</span> 
+    <span class="modal-spec-value" id="modalSound">Music, voice & sound effects</span> 
+  </div> 
+
+  <div class="modal-spec-item"> 
+    <span class="modal-spec-label">Color</span> 
+    <span class="modal-spec-value" id="modalPalette">Basic color correction</span> 
+  </div> 
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT MODAL (Start a Project Form) -->
+  <div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="contactModalTitle">
+    <div class="contact-modal-dialog">
+      <button type="button" class="modal-close-btn" id="contactModalClose" aria-label="Close Contact Dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <span class="eyebrow">Project Inquiry</span> 
+
+<h3 class="contact-modal-title" id="contactModalTitle">
+  Start a Project
+</h3> 
+
+<p class="contact-modal-desc">
+  Tell me a little about your video and what you need help with.
+</p> 
+
+<form
+  class="contact-form"
+  id="projectInquiryForm"
+  action="https://formspree.io/f/xgavdkdz"
+  method="POST"
+>
+
+  <div class="form-group">
+    <label for="inquiryName" class="form-label">Your Name</label>
+    <input
+      type="text"
+      id="inquiryName"
+      name="name"
+      class="form-input"
+      placeholder="e.g. Your Name"
+      required
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="inquiryEmail" class="form-label">Your Email Address</label>
+    <input
+      type="email"
+      id="inquiryEmail"
+      name="email"
+      class="form-input"
+      placeholder="you@domain.com"
+      required
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="inquiryType" class="form-label">Project Type</label>
+    <select
+      id="inquiryType"
+      name="project_type"
+      class="form-select"
+      required
+    >
+      <option value="YouTube Video">YouTube Video</option>
+      <option value="Documentary">Documentary</option>
+      <option value="Reels / Short-Form">Reels / Short-Form</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="inquiryDetails" class="form-label">Project Details</label>
+    <textarea
+      id="inquiryDetails"
+      name="message"
+      class="form-textarea"
+      placeholder="Tell me about your video, footage, style, and what you need."
+      required
+    ></textarea>
+  </div>
+
+  <div id="formFeedback" class="form-feedback" role="status"></div>
+
+  <button type="submit" class="btn btn-primary form-submit-btn">
+    Send Inquiry
+  </button>
+
+</form>
+    </div>
+  </div>
+
+</body>
+</html>
